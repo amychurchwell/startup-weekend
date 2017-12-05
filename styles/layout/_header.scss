@@ -4,14 +4,21 @@
 
 // Header styles
 
+
 header {
-  background-image: url('../img/sw-hero-home.png');
+  background: url('../img/sw-hero-home.png');
+  background-size: cover;
   width: 100%;
+  overflow: auto;
+  .header-text {
+    margin: 123px auto 50px;
+    text-align: center;
+    padding: 0 10%;
+  }
   h1 {
     font-size: 3.5em;
     line-height: 1;
     margin: 0.67em 0;
-    text-align: center;
   }
 }
 
@@ -33,8 +40,9 @@ nav {
   }
 }
 
-#top-1{
-  background-color: #f4f4f4;
-  width: 100%;
-  height: 800px;
+#top-1 {
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 800px;
+    overflow: auto;
 }

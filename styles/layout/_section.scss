@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the sections of the site/application.
+// -----------------------------------------------------------------------------
+
+.icon-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+
+  .icon {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.section-header {
+  h2 {
+    color: #525252;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.25;
+  }
+  p {
+    color: gray;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 1.25em;
+    margin-bottom: 130px;
+  }
+}

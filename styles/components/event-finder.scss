@@ -1,0 +1,28 @@
+.event-finder {
+  background: $brand-color;
+  margin-bottom: 75px;
+  &.container {
+    max-width: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 1.3em;
+
+    h3 {
+        flex-grow: 1;
+        text-align: center;
+    }
+  }
+  input[type="text"] {
+      padding: 15px 9px;
+      border: 1px solid;
+      margin-right: 7%;
+      max-width: 320px;
+      width: 100%;
+      color: #fff;
+      font-size: 0.8em;
+      border-radius: 7px;
+  }
+}

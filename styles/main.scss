@@ -20,11 +20,13 @@
 // 4. Layout-related sections
 @import
   'layout/header',
+  'layout/section',
   'layout/footer';
 
 // 5. Components
 @import
   'components/button',
+  'components/event-finder',
   'components/search';
 
 // 6. Page-specific styles
@@ -34,3 +36,9 @@
 // 7. Themes
 @import
   'themes/default';
+
+
+body *::selection {
+  background: $brand-color;
+  font-family: "Montserrat","Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
