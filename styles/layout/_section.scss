@@ -1,11 +1,16 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the sections of the site/application.
 // -----------------------------------------------------------------------------
+section{
+  overflow: auto;
+  padding: 70px 0;
+}
+.grid-4 {
+  @include grid(4);
+}
 
 .icon-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2em;
+  @include grid(4);
 
   .icon {
     background-color: #fff;
@@ -31,5 +36,28 @@
     line-height: 1.2;
     font-size: 1.25em;
     margin-bottom: 130px;
+  }
+}
+
+#top-1 {
+    background-color: #f4f4f4;
+    width: 100%;
+    overflow: auto;
+}
+
+#middle {
+  .value {
+    @include flex-center;
+    font-size: 6em;
+    font-weight: bold;
+    color: $brand-color;
+  }
+
+  .stats .small {
+      font-size: .8em;
+  }
+
+  h2 {
+      text-align: center;
   }
 }
